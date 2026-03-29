@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/**",
                 "/home/toharxp/Projects/emsdk/upstream/emscripten/cache/sysroot/include/",
-                "/home/toharxp/Projects/raylib/src/"
+                "/home/toharxp/Projects/raylib/src/",
+                "${workspaceFolder}/WebShockwave/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

@@ -680,69 +680,7 @@ void Runtime::initNativeFunctions() {
     return Obj(true);
     };
     */
-    nativeRegistry["aodom_createButton"] = [](const std::vector<Obj>& args) -> Obj {
-        std::string id = std::get<std::string>(args[0].as);
-        std::string css = std::get<std::string>(args[1].as);
-        std::string onClick = std::get<std::string>(args[2].as);
-        ActionObjects::js_create_button("hello",id.c_str(),onClick.c_str());
-        return Obj(0);
-    };
-    nativeRegistry["aodom_gotoURL"] = [](const std::vector<Obj>& args) -> Obj {
-        std::string URL = std::get<std::string>(args[0].as);
-        ActionObjects::js_gotoURL(URL.c_str());
-        return Obj(0);
-    };
-    nativeRegistry["aogInit"] = [](const std::vector<Obj>& args) -> Obj {
-        int w = std::get<int>(args[0].as);
-        int h = std::get<int>(args[1].as);
-        ActionObjects::graphics::init(w,h);
-        return Obj(0);
-    };
-
-    nativeRegistry["aogIsRunning"] = [](const std::vector<Obj>& args) -> Obj {
-        return Obj(ActionObjects::graphics::isRunning());
-    };
-
-    nativeRegistry["aogClear"] = [](const std::vector<Obj>& args) -> Obj {
-        ActionObjects::graphics::clear();
-        return Obj(0);
-    };
-
-    nativeRegistry["aogEnd"] = [](const std::vector<Obj>& args) -> Obj {
-        ActionObjects::graphics::present();
-        return Obj(0);
-    };
-
-    /*nativeRegistry["aogDrawRect"] = [](const std::vector<Obj>& args) -> Obj {
-        float x = std::get<float>(args[0].as);
-        float y = std::get<float>(args[1].as);
-        float w = std::get<float>(args[2].as);
-        float h = std::get<float>(args[3].as);
-        float r = std::get<float>(args[4].as);
-        float g = std::get<float>(args[5].as);
-        float b = std::get<float>(args[6].as);
-        ActionObjects::graphics::draw::drawRect(x,y,w,h,r,g,b);
-        return Obj(0);
-    };*/
-    /*
-    nativeRegistry["aoglfxInit"] = [](const std::vector<Obj>& args) -> Obj {
-        ActionObjects::GL::Window::Init();
-        return Obj(0);
-    };
-
-    nativeRegistry["aoglfxIsRunning"] = [](const std::vector<Obj>& args) -> Obj {
-        return Obj(ActionObjects::GL::Window::isRunning());
-    };
-
-    nativeRegistry["glfxClear"] = [](const std::vector<Obj>& args) -> Obj {
-        ActionObjects::GL::glfxClear();
-        return Obj(0);
-    };
-
-    nativeRegistry["aoglfxSwapBuffers"] = [](const std::vector<Obj>& args) -> Obj {
-        ActionObjects::GL::Window::swapBuffers();
-        return Obj(0);
-    };*/
+    
     
 }
 
