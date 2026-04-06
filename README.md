@@ -20,7 +20,7 @@ ActiveFX Provides:
 ## How to build:
 
 1:get the repository from github:
-`git clone https://github.com/tohar777/Nebania-ActiveFX.git`
+`git clone https://github.com/Nebania/ActiveFX.git`
 
 2.1:compile for emscripten
 
