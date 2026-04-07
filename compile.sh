@@ -1,1 +1,0 @@
-g++ WebShockwave/src/*.cpp -IWebShockwave/include -lSDL2 -lSDL2main -lGL -o Shockwave

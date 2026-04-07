@@ -4,14 +4,12 @@
 #include <string>
 #include <cstring>
 #include <stdio.h>
-
-//======================
-//  DOM Manipolation
-//======================
-
+#include <emscripten/emscripten.h>
 namespace ActionObjects
 {   
-    
+    //======================
+    //  DOM Manipolation
+    //======================
     
     
 } // namespace ActionObjects
