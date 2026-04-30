@@ -1,4 +1,0 @@
-build/standalone/*
-build/wasm/*.js
-build/wasm/*.wasm
-*.ini

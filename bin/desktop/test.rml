@@ -1,0 +1,4 @@
+<body>
+    <button onclick="hello">Click me</button>
+    <div>Hello RmlUi</div>
+</body>

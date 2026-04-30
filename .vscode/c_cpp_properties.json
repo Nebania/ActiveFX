@@ -4,10 +4,10 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/**",
                 "/home/toharxp/Projects/emsdk/upstream/emscripten/cache/sysroot/include/",
-                "/home/toharxp/Projects/raylib/src/",
-                "${workspaceFolder}/WebShockwave/include"
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/ActiveLink/include",
+                "${workspaceFolder}/ActiveForms/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
